@@ -33,7 +33,7 @@ namespace RandomNumberAnalysis
 
         public static double CalculateMean(List<double> numList)
         {
-            if (numList.Count == 0) return 0;
+            if (numList.Count == 0) throw new ArgumentException();
             double total = 0;
             foreach (double num in numList)
             {
